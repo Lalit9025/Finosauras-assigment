@@ -35,8 +35,8 @@ const Table: React.FC = () => {
       try {
         setLoading(true);
         setError(null);
-        
-        const response = await axios.get('http://localhost:5003/api/fii-dii');
+        const baseUrl = import.meta.env.VITE_API_BASE_URL;
+        const response = await axios.get(`${baseUrl}/api/fii-dii`);
         
         
         const data: FiiDiiEntry[] = response.data;

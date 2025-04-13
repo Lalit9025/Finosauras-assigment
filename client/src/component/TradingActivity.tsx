@@ -40,7 +40,8 @@ const TradingActivity: React.FC = () => {
       try {
         setLoading(true);
         const flag = activeTimeframe === 'Daily' ? 'D' : activeTimeframe === 'Monthly' ? 'M' : 'Y';
-        const response = await axios.get(`http://localhost:5003/api/data?ftype=${selectedType}&flag=${flag}`);
+        const baseUrl = import.meta.env.VITE_API_BASE_URL;
+        const response = await axios.get(`${baseUrl}/api/data?ftype=${selectedType}&flag=${flag}`);
         
         const formattedData: TradingData[] = response.data.map((item: ApiResponse) => ({
           date: item.month,
