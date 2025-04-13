@@ -1,0 +1,146 @@
+.container {
+  width: 100%;
+  min-width: 100vw;
+  padding: 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #1f2937;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+  
+  .dropdown {
+    padding: 8px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 9999px;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover {
+    border-color: #9ca3af;
+  }
+  
+  .timeFilter {
+    padding: 8px 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .activeFilter {
+    background-color: #4338ca;
+    color: white;
+  }
+  
+  .inactiveFilter {
+    background-color: white;
+    color: #4b5563;
+  }
+  
+  .inactiveFilter:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #e5e7eb;
+  }
+  .table th {
+    background: #f9fafb;
+    padding: 12px;
+    text-align: left;
+    color: #6b7280;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .table td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .tableHeader {
+    text-align: left;
+    padding: 16px;
+    background-color: #f9fafb;
+    color: #4b5563;
+    font-weight: 500;
+  }
+  
+  .tableRow {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .tableRow:hover {
+    background-color: #f9fafb;
+    transition: background-color 0.2s;
+  }
+  
+  .tableCell {
+    padding: 16px;
+  }
+  
+  .negative {
+    color: #ef4444;
+  }
+  
+  .positive {
+    color: #10b981;
+  }
+  .dropdownContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown {
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+    min-width: 200px;
+  }
+  
+  .dropdownItem {
+    padding: 8px 16px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .activeType {
+    background-color: #e5e7eb;
+  }

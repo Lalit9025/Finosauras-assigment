@@ -1,0 +1,68 @@
+  .container {
+    width: 100%;
+    min-width: 100vw;
+    padding: 20px;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .tabContainer {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 8px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    background: #f3f4f6;
+  }
+  
+  .activeTab {
+    background: #8b1d3d;
+    color: white;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .table th {
+    background: #f9fafb;
+    padding: 12px;
+    text-align: left;
+    color: #6b7280;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .table td {
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .positive {
+    color: #059669;
+  }
+  
+  .negative {
+    color: #dc2626;
+  }
+  
+  .loading, .error, .noData {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .error {
+    color: #dc2626;
+  }
+  
+  .noData {
+    color: #6b7280;
+  }
